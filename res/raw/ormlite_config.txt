@@ -1,0 +1,90 @@
+#
+# generated on 2012/08/03 04:56:34
+#
+# --table-start--
+dataClass=database.digitaldesk.com.br.Artista
+tableName=artista
+# --table-fields-start--
+# --field-start--
+fieldName=artistaId
+id=true
+# --field-end--
+# --field-start--
+fieldName=nome
+canBeNull=false
+# --field-end--
+# --field-start--
+fieldName=imagem
+# --field-end--
+# --field-start--
+fieldName=descricao
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=database.digitaldesk.com.br.Favoritos
+tableName=favoritos
+# --table-fields-start--
+# --field-start--
+fieldName=artista
+columnName=artistaId
+canBeNull=false
+foreign=true
+foreignAutoRefresh=true
+# --field-end--
+# --field-start--
+fieldName=mbid
+id=true
+# --field-end--
+# --field-start--
+fieldName=albumId
+# --field-end--
+# --field-start--
+fieldName=name
+# --field-end--
+# --field-start--
+fieldName=image
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=database.digitaldesk.com.br.Musica
+tableName=musica
+# --table-fields-start--
+# --field-start--
+fieldName=musicaId
+id=true
+# --field-end--
+# --field-start--
+fieldName=album
+columnName=albumId
+canBeNull=false
+foreign=true
+foreignAutoRefresh=true
+# --field-end--
+# --field-start--
+fieldName=nome
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=database.digitaldesk.com.br.TopArtista
+tableName=topartista
+# --table-fields-start--
+# --field-start--
+fieldName=artista
+columnName=artistaId
+canBeNull=false
+foreign=true
+foreignAutoRefresh=true
+# --field-end--
+# --field-start--
+fieldName=posicao
+id=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################

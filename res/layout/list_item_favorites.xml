@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+    
+    <HorizontalScrollView
+        android:id="@+id/scroll_ListItemFavorites" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarSize="100dp"
+        android:minHeight="50dp">
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            
+            <ImageView 
+    	android:id="@+id/img_ListItemFavorites"
+    	android:layout_width="48dp"
+    	android:layout_height="48dp"/>
+    
+	<Button 
+	    android:id="@+id/btn_Favoritos_Favorites"
+	    android:layout_width="48dp"
+	    android:layout_height="48dp"
+	    android:visibility="gone"/>
+	
+	<TextView 
+    	android:id="@+id/text_ListItemFavorites"
+    	android:textColor="@android:color/black"
+    	android:textSize="18dp"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:minHeight="50dp"/>
+            
+        </LinearLayout>
+        
+    </HorizontalScrollView>
+    
+
+</LinearLayout>

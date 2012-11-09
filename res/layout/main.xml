@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_main"
+    android:baselineAligned="false"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="20" >
+
+   <LinearLayout 
+       android:id="@+id/linear_Top"
+       android:layout_width="fill_parent"
+       android:layout_height="0px"
+       android:layout_weight="2"
+       android:gravity="center"
+       android:background="@android:color/darker_gray">
+       
+       <TextView 
+           android:id="@+id/txt_Top"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textColor="@android:color/black"
+           android:text="@string/textTop"/>
+       
+       <LinearLayout 
+           android:id="@+id/linear_Search"
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           android:weightSum="20"
+           android:visibility="gone">
+           
+           <EditText 
+               android:id="@+id/txt_Search_Editable"
+               android:layout_width="0px"
+               android:layout_height="fill_parent"
+               android:layout_weight="15"/>
+           
+           <Button 
+               android:id="@+id/btn_Search"
+               android:layout_width="0px"
+               android:layout_height="fill_parent"
+               android:layout_weight="5"
+               android:imeOptions="actionSearch"
+               android:text="Search"/>
+           
+       </LinearLayout>
+       
+   </LinearLayout>
+   
+
+<!--    <LinearLayout  -->
+<!--        android:id="@+id/linear_Content" -->
+<!--        android:layout_width="fill_parent" -->
+<!--        android:layout_height="0px" -->
+<!--        android:layout_weight="16"> -->
+       <ListView 
+           android:id="@+id/list_Content"
+           android:layout_width="fill_parent"
+           android:layout_height="0px"
+           android:layout_weight="18"></ListView>
+       
+<!--   </LinearLayout> -->
+ 
+   
+</LinearLayout>

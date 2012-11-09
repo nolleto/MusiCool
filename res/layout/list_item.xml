@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+	android:background="@android:color/background_light"
+    android:orientation="horizontal">
+
+	<ImageView 
+    	android:id="@+id/img_ListItem"
+    	android:layout_width="48dp"
+    	android:layout_height="48dp"/>
+    
+	<Button 
+	    android:id="@+id/btn_Favoritos"
+	    android:layout_width="48dp"
+	    android:layout_height="48dp"
+	    android:visibility="gone"/>
+	
+	<TextView 
+    	android:id="@+id/text_ListItem"
+    	android:textColor="@android:color/black"
+    	android:textSize="18dp"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:minHeight="50dp"/>
+
+</LinearLayout>

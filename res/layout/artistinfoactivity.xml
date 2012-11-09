@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="20">
+    
+     <LinearLayout 
+           android:layout_width="fill_parent"
+           android:layout_height="0px"
+           android:layout_weight="2"
+           android:orientation="vertical"
+           android:gravity="center"
+           android:background="@android:color/darker_gray">
+    	
+    	<TextView 
+        	android:id="@+id/txt_Info_ArtistInfoActivity"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="teste"
+        	android:textColor="@android:color/black"/>
+    	
+    	</LinearLayout>
+    
+    <ScrollView 
+        android:id="@+id/scroll_ArtistInfoActivity"
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="18">
+       
+        <LinearLayout 
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           android:orientation="vertical"
+           android:gravity="center"
+           android:weightSum="24">
+        
+        	<ImageView 
+            	android:id="@+id/img_ArtistInfoActivity"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_weight="8"/>  
+            	
+        	<TextView 
+        	    android:layout_width="fill_parent"
+        	    android:layout_height="wrap_content"
+        	    android:text="Description:"
+        	    android:textColor="@android:color/darker_gray"
+        	    android:textSize="18dp"
+        	    android:layout_marginTop="20dp"
+        	    android:layout_marginBottom="10dp"/>
+        	
+        	<TextView 
+        	    android:id="@+id/txt_Descricao_ArtistInfoActivity"
+        	    android:layout_width="280dp"
+        	    android:layout_height="100dp"
+        	    android:layout_weight="8"
+        	    android:textColor="@android:color/black"
+        	    android:background="@android:color/background_light"
+        	    android:gravity="center_horizontal"
+        	    android:text="No description."/>
+        
+        	<Button 
+        	    android:id="@+id/btn_Show_Descricao"
+        	    android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    android:text="More"/>
+        	
+        	<TextView 
+        	    android:layout_width="fill_parent"
+        	    android:layout_height="wrap_content"
+        	    android:text="Albuns:"
+        	    android:textColor="@android:color/darker_gray"
+        	    android:textSize="18dp"
+        	    android:layout_marginTop="20dp"
+        	    android:layout_marginBottom="10dp"/>
+        	
+        	<HorizontalScrollView 
+        	    android:layout_width="wrap_content"
+        	    android:layout_height="220dp"
+        	    android:layout_weight="8"
+        	    >
+        	    
+        	    <LinearLayout 
+        	        android:id="@+id/linear_Albums_ArtistInfoActivity"
+        	        android:layout_width="fill_parent"
+        	        android:layout_height="220dp"
+        	        android:background="@android:color/darker_gray"
+        	        android:gravity="center_vertical"
+        	        android:orientation="horizontal">
+        	         
+        	    </LinearLayout>
+        	    
+        	</HorizontalScrollView>
+        	
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
